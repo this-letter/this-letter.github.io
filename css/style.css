@@ -322,7 +322,7 @@
   font-size: 1.5em;
   font-style: normal;
   font-weight: 700;
-  color: #000;
+  color: #40826d;
   margin-top: 3rem;
   margin-bottom: 1rem;
   display: block;
@@ -413,12 +413,12 @@
 }
 .content table {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   border-collapse: collapse;
   text-align: left;
 }
 .content th {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   color: #383838;
   border-bottom: 1px dashed #ccc;
@@ -442,8 +442,8 @@ html {
 body {
   color: #383838;
   background-color: #fff;
-  font-size: 14px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-size: 16px;
+  font-family: "Noto Sans", "Helvetica Neue";
   font-weight: 400;
   line-height: 1.725;
   text-rendering: geometricPrecision;
@@ -478,11 +478,8 @@ body {
 .content a {
   text-decoration: none;
   color: #383838;
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #383838 5px, #383838);
 }
+.content a 5px,
 .content a:hover {
   background-image: linear-gradient(transparent, transparent 4px, #d480aa 4px, #d480aa);
 }
@@ -585,7 +582,7 @@ body {
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 200;
-  color: #000;
+  color: #40826d;
 }
 #header #nav ul {
   list-style-type: none;
@@ -601,13 +598,13 @@ body {
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
+  background-image: linear-gradient(transparent, transparent 5px, #40826d 5px, #40826d);
 }
 #header #nav ul li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  border-right: 1px dotted #000;
+  border-right: 1px dotted #40826d;
 }
 #header #nav ul .icon {
   display: none;
@@ -690,7 +687,7 @@ body {
   margin-right: 2rem;
 }
 #header-post #menu-icon:hover {
-  color: #000;
+  color: #40826d;
 }
 #header-post #menu-icon-tablet {
   float: right;
@@ -698,7 +695,7 @@ body {
   margin-right: 2rem;
 }
 #header-post #menu-icon-tablet:hover {
-  color: #000;
+  color: #40826d;
 }
 #header-post #top-icon-tablet {
   margin-left: 15px;
@@ -708,10 +705,10 @@ body {
   position: fixed;
 }
 #header-post #top-icon-tablet:hover {
-  color: #000;
+  color: #40826d;
 }
 #header-post .active {
-  color: #000;
+  color: #40826d;
 }
 #header-post #menu {
   visibility: hidden;
@@ -722,7 +719,7 @@ body {
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 200;
-  color: #000;
+  color: #40826d;
 }
 #header-post #nav ul {
   line-height: 15px;
@@ -735,10 +732,10 @@ body {
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
+  background-image: linear-gradient(transparent, transparent 5px, #40826d 5px, #40826d);
 }
 #header-post #nav ul li {
-  border-right: 1px dotted #000;
+  border-right: 1px dotted #40826d;
 }
 #header-post #nav ul li:last-child {
   border-right: 0;
@@ -793,7 +790,7 @@ body {
 }
 #header-post #toc .toc-level-2:before {
   content: "#";
-  color: #000;
+  color: #40826d;
 }
 #header-post #toc .toc-level-3 {
   font-size: 0.7rem;
@@ -881,14 +878,14 @@ body {
   text-align: center;
 }
 #footer-post #nav-footer a {
-  color: #000;
+  color: #40826d;
   font-size: 1rem;
 }
 #footer-post #nav-footer a:hover {
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
+  background-image: linear-gradient(transparent, transparent 5px, #40826d 5px, #40826d);
 }
 #footer-post #nav-footer ul {
   list-style-type: none;
@@ -910,7 +907,7 @@ body {
   width: 100%;
 }
 #footer-post #actions-footer a {
-  color: #000;
+  color: #40826d;
 }
 #footer-post #actions-footer ul {
   list-style-type: none;
@@ -965,7 +962,7 @@ body {
 }
 #footer-post #toc-footer .toc-level-2:before {
   content: "#";
-  color: #000;
+  color: #40826d;
 }
 #footer-post #toc-footer .toc-level-3 {
   font-size: 0.7rem;
@@ -1064,7 +1061,7 @@ article header .postdate {
 }
 article .content h2:before {
   content: "#";
-  color: #000;
+  color: #40826d;
   position: absolute;
   left: -1rem;
   top: -4px;
@@ -1264,7 +1261,7 @@ article .content .caption {
   padding: 4px 6px;
   text-decoration: none;
   border-radius: 5px;
-  background-color: #000;
+  background-color: #40826d;
   background-image: none;
 }
 .pagination a:hover {
@@ -1287,7 +1284,7 @@ article .content .caption {
   -webkit-appearance: none;
 }
 .search-input:focus {
-  border: solid 1px #000;
+  border: solid 1px #40826d;
 }
 #search-result ul.search-result-list {
   list-style-type: none;
@@ -1381,7 +1378,7 @@ article .content .caption {
   font-weight: bold;
 }
 pre {
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Helvetica Neue", "Arial", "Menlo", "Meslo LG", monospace;
   font-size: 13px;
   padding: 0px 15px;
   padding-bottom: 0;
@@ -1403,7 +1400,7 @@ pre code {
   padding: 0;
 }
 .highlight {
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Helvetica Neue", "Arial", "Menlo", "Meslo LG", monospace;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   padding: 0px 15px;
