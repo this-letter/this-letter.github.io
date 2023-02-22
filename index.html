@@ -249,30 +249,33 @@ I post regularly here.
 <!-- user-defined: images -->
 <br>
 <br>
-<!-- <figure> -->
-<!--     <center> -->
-<!--     <img src="https://raw.githubusercontent.com/dacian98/images/main/wp11745870.jpg" alt="图片描述" style="zoom:40%;"> -->
-<!--     <figcaption>J1407b</figcaption> -->
-<!--     </center> -->
-<!-- </figure> -->
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
+    .container img {
+        box-sizing: border-box;
+        width: 75%;
+        max-width: 100%;
+        height: auto;
+        zoom: 42%;
+    }
 
-<div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="https://raw.githubusercontent.com/dacian98/images/main/wp11745870.jpg" alt="图片描述" style="zoom:42%;">
-    <p style="max-width: 72%; text-align: left;">J1407b, located approximately 434 light years away from Earth, has rings which span around 120 million kilometers.</p>
+    .container p {
+        max-width: 72%;
+        text-align: left;
+    }
+</style>
+
+<div class="container">
+    <img src="https://raw.githubusercontent.com/dacian98/images/main/wp11745870.jpg" alt="图片描述">
+    <p>J1407b, located approximately 434 light years away from Earth, has rings which span around 120 million kilometers.</p>
 </div>
 
-
-<!-- <center><img src="https://raw.githubusercontent.com/dacian98/images/main/Photo_12.jpg" alt="Going back" style="zoom:17%;" div align=center /></center>  -->
-
-<!-- <style> -->
-<!--   a.proj { -->
-<!--     color: #115b7a; -->
-<!--   } -->
-<!--   a.proj:hover { -->
-<!--     color: #4483EB; -->
-<!--   } -->
-<!-- </style> -->
 
         
         <footer id="footer">
