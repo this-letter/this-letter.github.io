@@ -321,7 +321,7 @@ body .h1 {
   display: block;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  color: #7393b3;
+  color: #000;
   letter-spacing: 0.01em;
   font-weight: 700;
   font-style: normal;
@@ -419,7 +419,7 @@ body table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   overflow: auto;
   display: block;
 }
@@ -428,7 +428,7 @@ body th {
   border-bottom: 1px dashed #666;
   color: #383838;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 body td {
   padding: 0 8px;
@@ -482,7 +482,7 @@ body {
   color: #383838;
   font-display: swap;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Lato", "Helvetica Neue";
   line-height: 1.725;
   text-rendering: geometricPrecision;
@@ -515,6 +515,16 @@ a {
 }
 a:hover {
   color: #7393b3;
+}
+.h2,
+h2 {
+  font-family: "Alegreya Sans SC";
+  font-weight: 500 !important;
+}
+.h1,
+h1 {
+  font-family: "Alegreya Sans SC";
+  font-weight: 500 !important;
 }
 a.icon {
   background: none;
@@ -620,7 +630,7 @@ h6 a:hover {
   background-repeat: no-repeat;
 }
 #header #nav {
-  color: #7393b3;
+  color: #000;
   letter-spacing: 0.01em;
   font-weight: 200;
   font-style: normal;
@@ -634,10 +644,10 @@ h6 a:hover {
 }
 #header #nav ul a {
   margin-right: 15px;
-  color: #7393b3;
+  color: #000;
 }
 #header #nav ul a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #7393b3 5px, #7393b3);
+  background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
@@ -645,8 +655,8 @@ h6 a:hover {
 #header #nav ul li {
   display: inline-block;
   margin-right: 15px;
-  border-right: 1px dotted;
-  border-color: #7393b3;
+  border-right: 0;
+  border-color: #000;
   vertical-align: middle;
 }
 #header #nav ul .icon {
@@ -733,7 +743,7 @@ h6 a:hover {
   margin-left: 15px;
 }
 #header-post #menu-icon:hover {
-  color: #7393b3;
+  color: #000;
 }
 #header-post #menu-icon-tablet {
   float: right;
@@ -741,7 +751,7 @@ h6 a:hover {
   margin-left: 15px;
 }
 #header-post #menu-icon-tablet:hover {
-  color: #7393b3;
+  color: #000;
 }
 #header-post #top-icon-tablet {
   position: fixed;
@@ -751,17 +761,17 @@ h6 a:hover {
   margin-left: 15px;
 }
 #header-post #top-icon-tablet:hover {
-  color: #7393b3;
+  color: #000;
 }
 #header-post .active {
-  color: #7393b3;
+  color: #000;
 }
 #header-post #menu {
   display: none;
   margin-right: 2rem;
 }
 #header-post #nav {
-  color: #7393b3;
+  color: #000;
   letter-spacing: 0.01em;
   font-weight: 200;
   font-style: normal;
@@ -772,16 +782,16 @@ h6 a:hover {
 }
 #header-post #nav ul a {
   margin-right: 15px;
-  color: #7393b3;
+  color: #000;
 }
 #header-post #nav ul a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #7393b3 5px, #7393b3);
+  background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
 }
 #header-post #nav ul li {
-  border-right: 1px dotted #7393b3;
+  border-right: 1px dotted #000;
 }
 #header-post #nav ul li:last-child {
   margin-right: 0;
@@ -835,7 +845,7 @@ h6 a:hover {
   font-size: 0.8rem;
 }
 #header-post #toc .toc-level-2:before {
-  color: #7393b3;
+  color: #000;
   content: "#";
 }
 #header-post #toc .toc-level-3 {
@@ -933,11 +943,11 @@ h6 a:hover {
   text-align: center;
 }
 #footer-post #nav-footer a {
-  color: #7393b3;
+  color: #000;
   font-size: 1em;
 }
 #footer-post #nav-footer a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #7393b3 5px, #7393b3);
+  background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
@@ -968,7 +978,7 @@ h6 a:hover {
 #footer-post #actions-footer a {
   display: inline-block;
   padding-left: 1rem;
-  color: #7393b3;
+  color: #000;
 }
 #footer-post #share-footer {
   padding-right: 1rem;
@@ -1015,7 +1025,7 @@ h6 a:hover {
   font-size: 0.8rem;
 }
 #footer-post #toc-footer .toc-level-2:before {
-  color: #7393b3;
+  color: #000;
   content: "#";
 }
 #footer-post #toc-footer .toc-level-3 {
@@ -1101,7 +1111,7 @@ article .content h2:before {
   position: absolute;
   top: -4px;
   left: -1rem;
-  color: #7393b3;
+  color: #000;
   content: "#";
   font-weight: bold;
   font-size: 1.2rem;
@@ -1133,16 +1143,16 @@ article .content blockquote {
   margin: 1rem 10px;
   padding: 0.5em 10px;
   background: inherit;
-  color: #7393b3;
+  color: #000;
   quotes: "\201C" "\201D" "\2018" "\2019";
-  font-weight: bold;
+  font-weight: normal;
 }
 article .content blockquote p {
   margin: 0;
 }
 article .content blockquote:before {
   margin-right: 0.25em;
-  color: #7393b3;
+  color: #000;
   content: "\201C";
   vertical-align: -0.4em;
   font-size: 2em;
@@ -1265,7 +1275,7 @@ article .content .caption {
 #footer li {
   display: inline-block;
   margin-right: 15px;
-  border-right: 1px solid;
+  border-right: 0;
   border-color: #666;
   vertical-align: middle;
 }
@@ -1346,7 +1356,7 @@ article .content .caption {
   -moz-border-radius: 5px;
 }
 .search-input:focus {
-  border: solid 1px #7393b3;
+  border: solid 1px #000;
 }
 #search-result ul.search-result-list {
   padding: 0;
@@ -1402,7 +1412,7 @@ article .content .caption {
   color: #fff;
   font-display: swap;
   font-weight: 400;
-  font-size: 11.200000000000001px;
+  font-size: 12px;
   font-family: "Lato", "Helvetica Neue";
   line-height: 1.725;
   text-rendering: geometricPrecision;
@@ -1569,7 +1579,7 @@ pre {
   border: 1px dotted #666;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Noto Sans", "Helvetica Neue";
+  font-family: "Lato", "Helvetica Neue";
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1590,7 +1600,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #fafafa;
-  font-family: "Noto Sans", "Helvetica Neue";
+  font-family: "Lato", "Helvetica Neue";
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
@@ -1630,7 +1640,7 @@ code {
   transition: opacity 0.2s ease-in;
 }
 .highlight .btn-copy:hover {
-  color: #7393b3;
+  color: #000;
 }
 .highlight pre {
   margin: 0;
