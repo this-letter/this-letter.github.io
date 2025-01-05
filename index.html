@@ -315,7 +315,7 @@ body.focus-mode textarea::-webkit-scrollbar-thumb {
 
 <div class="button-container">
     <button class="action-button" onclick="submitEntry()">Post</button>
-    <button class="action-button" onclick="togglePreview()" id="previewToggle">Show Preview</button>
+    <button class="action-button" onclick="togglePreview()" id="previewToggle">Preview</button>
     <button class="action-button" onclick="viewPosts()">View Posts</button>
 </div>
 
@@ -341,7 +341,7 @@ function viewPosts() {
             const toggleButton = document.getElementById('previewToggle');
             const editorContainer = document.getElementById('editorContainer');
             const isPreviewEnabled = editorContainer.classList.toggle('with-preview');
-            toggleButton.textContent = isPreviewEnabled ? 'Hide Preview' : 'Show Preview';
+            toggleButton.textContent = isPreviewEnabled ? 'Hide' : 'Preview';
             if (isPreviewEnabled) {
                 updatePreview();
             }
