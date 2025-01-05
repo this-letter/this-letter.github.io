@@ -271,30 +271,37 @@
             return lines[0].replace(/^#+\s*/, '').trim() || 'Untitled';
         }
 
-        async function loadEntries() {
-            try {
-                const { data: posts, error } = await supabase
-                    .from('posts')
-                    .select('*')
-                    .order('created_at', { ascending: false });
+async function loadEntries() {
+    try {
+        const { data: posts, error } = await supabase
+            .from('posts')
+            .select('*')
+            .order('created_at', { ascending: false });
 
-                if (error) throw error;
+        if (error) throw error;
 
-                postsGrid.innerHTML = posts.map(post => {
-                    const title = getFirstLine(post.content);
-                    return `
-                        <div class="post-item">
-                            <div class="post-date">${new Date(post.created_at).toLocaleDateString()}</div>
-                            <div class="post-username">${post.username || "Anonymous"}</div>
-                            <div class="post-title" onclick="showPostDetail('${encodeURIComponent(post.content)}', '${post.username || "Anonymous"}')">${title}</div>
-                        </div>
-                    `;
-                }).join('');
+        postsGrid.innerHTML = posts.map(post => {
+            const title = getFirstLine(post.content);
+            const formattedDate = new Date(post.created_at).toLocaleString('en-US', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+            });
+            return `
+                <div class="post-item">
+                    <div class="post-date">${formattedDate}</div>
+                    <div class="post-username">${post.username || "Anonymous"}</div>
+                    <div class="post-title" onclick="showPostDetail('${encodeURIComponent(post.content)}', '${post.username || "Anonymous"}')">${title}</div>
+                </div>
+            `;
+        }).join('');
 
-            } catch (error) {
-                postsGrid.innerHTML = `<div class="loading">Error loading posts: ${error.message}</div>`;
-            }
-        }
+    } catch (error) {
+        postsGrid.innerHTML = `<div class="loading">Error loading posts: ${error.message}</div>`;
+    }
+}
 
         function showPostDetail(content, username) {
             history.pushState({ view: 'postDetail' }, '', '#post');
